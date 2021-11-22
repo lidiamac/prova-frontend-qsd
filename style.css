@@ -1,0 +1,101 @@
+/* formulario de login */
+
+h1{
+    text-align:center;
+    color:#5e002f;
+}
+
+h2{
+    color:#5e002f;
+    font-size: 30px;
+}
+
+.main-container{
+    display:flex;
+    align-items: center;
+    height: 500px; 
+    text-align: center;
+    
+}
+
+.redes-sociais, h2, span{
+    margin-top: 10px;
+}
+
+.redes-sociais img{
+    width:20px;
+    margin: 10px;
+    padding: 5px
+}
+
+a{
+    text-decoration: none;
+    color: #380319;
+}
+
+
+.fazer-login{
+    border-right: 4px solid #b4b4b4;
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+}
+
+.fazer-login form{
+    display:flex;
+    flex-direction: column;
+    width: 70%;
+    align-self: center;
+}
+
+form input, button{
+    align-self: center;
+    width: 50%;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+form a{
+    margin-top:10px;
+}
+
+button{
+    background-color: #d87fa4;
+    border: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+.cadastre-se{
+    flex: 1;
+}
+
+.redireciona-cadastro{
+    background-color: #380319;
+    color: #d87fa4;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+@media (max-width: 768px){
+    .cadastre-se{
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+    }
+
+    .redes-sociais img{
+        width:40px;
+        
+    }
+}

@@ -10,38 +10,57 @@
 </head>
 
 <body>
+    <h1>Faça seu login ou cadastre-se</h1>
     <div class="main-container">
-        <h1>Faça seu login ou cadastre-se</h1>
-
         <div class="fazer-login">
             <h2>Login</h2>
 
             <div class="redes-sociais">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <a href="https://www.facebook.com/">
+                    <img src="imagens/facebook.png" alt="">
+                </a>
+
+                <a href="https://twitter.com/">
+                    <img src="imagens/twitter.png" alt="">
+                </a>
+                
+                <a href="https://www.linkedin.com/">
+                    <img src="imagens/linkedin.png" alt="">
+                </a>
             </div>
 
             <span class="">ou use sua conta</span>
 
             <form>
-                <input type="email" name="" id="" placeholder="E-mail">
-                <input type="password" name="" id="" placeholder="Senha">
+                <input type="email" name="email" id="login_email" placeholder="E-mail">
+                <input type="password" name="senha" id="login_senha" placeholder="Senha">
 
                 <a href="#">Esqueceu sua senha?</a>
 
                 <button type="submit">entrar</button>
+                <button class="button-mobile" style="display:none" type="submit">entrar</button>
             </form>
 
-            
+
         </div>
 
         <div class="cadastre-se">
             <h2>Olá!</h2>
             <p>Não possui cadastro?</p>
-            <a href="pagina_cadastro.html" class="redireciona-cadastro" >cadastre-se</a>
+            <a href="pagina_cadastro.html" class="redireciona-cadastro">cadastre-se</a>
         </div>
     </div>
+
+
+    <!--script de validação -->
+    <script>
+        email = document.getElementById("login_email");
+        senha = document.getElementById("login_senha");
+        enviar = document.querySelector("button.login");
+
+        
+
+    </script>
 </body>
 
 </html>
