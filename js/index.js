@@ -1,4 +1,3 @@
-let email = document.getElementById("login-_email");
 let senha = document.getElementById("login_senha");
 
 
