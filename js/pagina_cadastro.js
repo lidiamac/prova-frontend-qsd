@@ -57,3 +57,24 @@ cep.onblur = function() {
 }
 
 
+// ----------------------------------
+// validação do rg
+let rg = document.getElementById("cadastro_rg");
+
+rg.onblur = function() {
+    let regexRg = /^[0-9]{2,3}\.?[0-9]{2,3}\.?[0-9]{3}\-?[A-Za-z0-9]{1}$/;
+    let msgRgError = document.querySelector(".rg-msg-error");
+    let msgRgOk = document.querySelector(".rg-msg-success");
+
+    if (regexRg.test(rg.value)) {
+        msgRgError.style.display = "none";
+        msgRgOk.style.color = "green";
+        msgRgOk.style.display = "block";
+    } else {
+        msgRgOk.style.display = "none";
+        msgRgError.style.color = "red";
+        msgRgError.style.display = "block";
+    }
+}
+
+
