@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
                 <a href="https://twitter.com/">
                     <img src="imagens/twitter.png" alt="">
                 </a>
-                
+
                 <a href="https://www.linkedin.com/">
                     <img src="imagens/linkedin.png" alt="">
                 </a>
@@ -33,7 +33,11 @@
 
             <form>
                 <input type="email" name="email" id="login_email" placeholder="E-mail">
+
                 <input type="password" name="senha" id="login_senha" placeholder="Senha">
+
+                <span class="senha-msg-error" style="display:none" >digite pelo menos 8 caracteres</span>
+                <span class="senha-msg-success" style="display:none" >ok</span>
 
                 <a href="#">Esqueceu sua senha?</a>
 
@@ -53,14 +57,7 @@
 
 
     <!--script de validação -->
-    <script>
-        email = document.getElementById("login_email");
-        senha = document.getElementById("login_senha");
-        enviar = document.querySelector("button.login");
-
-        
-
-    </script>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>
