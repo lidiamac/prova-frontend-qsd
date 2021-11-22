@@ -1,10 +1,35 @@
-.main{
-    display: flex;
+h1, h2{
+    text-align: center;
 }
 
+.main{
+    display:flex;
+    align-items: center;
+    height: 500px; 
+    text-align: center;
+}
+
+
 .formulario-cadastro{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     flex: 1;
 }
+
+.redes-sociais img{
+    width:20px;
+    margin: 10px;
+    padding: 5px
+}
+
+.formulario-cadastro form{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+
 
 .ir-login{
     flex: 1;
